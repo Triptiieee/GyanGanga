@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railway Concession</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Header -->
+  <div class="top-header">
+    <div class="site-name">Smart Student Onboarding</div>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search">
+      <div class="profile">👤</div>
+    </div>
+  </div>
+
+  <!-- Menu Bar -->
+  <div class="menu-bar">
+    <a href="dashboard.html">Home</a>
+    <a href="events.html">Events</a>
+    <div class="dropdown">
+      <a href="academics.html">Academics</a>
+        <div class="dropdown-content">
+          <a href="academics.html">ENC</a>
+          <a href="academics.html">CE</a>
+          <a href="academics.html">DS</a>
+          <a href="academics.html">AI</a>
+          <a href="academics.html">CST</a>
+        </div>
+    </div>
+    <a href="library.html">Library</a>
+    <a href="concession.html">Railway</a>
+  </div>
+
+  <!-- Body -->
+  <div class="container">
+    <h2>Railway Concession Application</h2>
+
+    <div class="card">
+      <p><b>Student Name:</b> Student</p>
+
+      <p><b>From:</b> Mumbai</p>
+      <p><b>To:</b> Navi Mumbai</p>
+
+      <p><b>Class:</b></p>
+      <select id="class">
+         <option>Second Class</option>
+         <option>First Class</option>
+      </select>
+
+      <p><b>Validity:</b></p>
+      <select id="validity">
+         <option>Monthly</option>
+         <option>Quarterly</option>
+      </select>
+
+      <br><br>
+      <button class="btn" onclick="apply()">Apply for Concession</button>
+    </div>
+
+    <h2>Application Status</h2>
+
+    <div class="book-card">
+      <p>Status: <b id="status">Not Applied</b></p>
+      <p>Applied On: <span id="applied-date">-</span></p>
+      <p><b id="office-msg"></b></p>
+    </div>
+
+    <h2>Previous Applications</h2>
+
+    <div class="book-card">
+      <p>Nov 2025 - Jan 2026</p>
+      <span class="status done">Approved</span>
+    </div>
+
+    <div class="book-card">
+      <p>Aug 2025 - Oct 2025</p>
+      <span class="status done">Approved</span>
+    </div>
+  </div>
+
+    <script>
+     function apply() {
+     const today = new Date();
+    
+     const officeDate = new Date();
+     officeDate.setDate(officeDate.getDate() + 7);
+
+     const travelClass = document.getElementById("class").value;
+     const validity = document.getElementById("validity").value;
+
+     document.getElementById("status").innerText = "Applied";
+     document.getElementById("applied-date").innerText = today.toDateString();
+     document.getElementById("office-msg").innerText =
+      "Concession slip will be available in office on " + officeDate.toDateString();
+
+     alert("Application submitted for " + travelClass + " (" + validity + ")");
+     }
+    </script>
+
+</body>
+</html>

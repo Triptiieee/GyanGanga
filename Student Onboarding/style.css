@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2d6cdf;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d6cdf;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 5px 70px;
+  margin-right: 70px;
+}
+
+.profile {
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-hover {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  background: white;
+  padding: 10px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.profile:hover .profile-hover {
+  display: block;
+}
+
+.menu-bar {
+  background: #2d6cdf;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-bar a {
+  color: white;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-bar a:hover {
+  text-decoration: underline;
+}
+
+.main-body {
+  display: flex;
+  padding: 20px;
+}
+
+.left-panel {
+  width: 65%;
+}
+
+.ticker {
+  background: #f1f5ff;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.ticker-text {
+  display: inline-block;
+  padding: 10px 0;
+  animation: scroll 15s linear infinite;
+  font-weight: 500;
+  color: #2d6cdf;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-text a {
+  color: #2d6cdf;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.ticker-text a:hover {
+  text-decoration: underline;
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.library-card {
+  background: #2d6cdf;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.book-card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.pending {
+  background: orange;
+  color: white;
+}
+
+.overdue {
+  background: red;
+  color: white;
+}
+
+.done {
+  background: green;
+  color: white;
+}
+
+select {
+  width: 200px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #2d6cdf;
+  min-width: 120px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #2d6cdf;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 30px auto;
+}
+
+.dashboard {
+  display: flex;
+  gap: 15px;
+}
+
+.left-panel {
+  flex: 2;
+}
+
+.middle-panel {
+  flex: 1.5;
+}
+
+.right-panel {
+  flex: 1.5;
+}
+
+.todo {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.todo input {
+  margin-top: 2px;
+  margin-right: 8px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.card {
+  background: #f4f7fb;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.white {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 70%;
+  height: 100%;
+  background: #2b6cff;
+}
+
+.alerts li {
+  margin: 10px 0;
+  list-style: none;
+}
+

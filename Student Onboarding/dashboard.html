@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Header -->
+  <div class="top-header">
+    <div class="site-name">Smart Student Onboarding</div>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search">
+      
+      <div class="profile">
+        👤
+        <div class="profile-hover">
+          <p><b>Student</b></p>
+          <p>Progress: 75%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blue Navigation Bar -->
+  <div class="menu-bar">
+    <a href ="dashboard.html">Home</a>
+    <a href="events.html">Events</a>
+     <div class="dropdown">
+      <a href="academics.html">Academics</a>
+        <div class="dropdown-content">
+          <a href="academics.html">ENC</a>
+          <a href="academics.html">CE</a>
+          <a href="academics.html">DS</a>
+          <a href="academics.html">AI</a>
+          <a href="academics.html">CST</a>
+        </div>
+    </div>
+    <a href="library.html">Library</a>
+    <a href="concession.html">Railway</a>
+  </div>
+
+  <div class="ticker">
+  <div class="ticker-text">
+    <a href="library.html">📢 Library book due in 2 days</a> |
+    <a href="concession.html">🚆 Railway concession expiring soon</a> |
+    <a href="events.html">🎓 New hackathon this Friday</a> |
+    <a href="documents.html">📄 DS assignment due soon</a>
+  </div>
+  </div>
+
+  <!-- Body -->
+  <div class="container dashboard">
+
+  <!-- LEFT SIDE -->
+  <div class="left-panel">
+    <div class="card white">
+      <h2>Welcome, Student 👋</h2>
+      <p>Branch: - | Year: 1st</p>
+      <p><b>Onboarding Progress:</b></p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <div class="card white">
+      <h3>About the Platform</h3>
+      <p>
+        This centralized student onboarding platform helps manage academic and 
+        administrative activities from one place. Students can track library 
+        books, apply for railway concession, stay updated with events, and 
+        monitor academic progress without missing important deadlines.
+      </p>
+    </div>
+  </div>
+  <div class="middle-panel">
+  <div class="card white">
+    <h3>Today's Tasks</h3>
+    <div id="tasklist">
+     <div class="todo">
+       <label class="todo-item">
+         <input type="checkbox">
+         <p>Complete AI Ethics course</p>
+        </label>
+      </div>
+
+     <div class="todo">
+       <label class="todo-item">
+         <input type="checkbox">
+         <p>Attend Robotics seminar (3 PM)</p>
+        </label>
+      </div>
+
+     <div class="todo">
+       <label class="todo-item">
+         <input type="checkbox">
+         <p>Submit DS assignment</p>
+        </label>
+      </div>
+
+     <div class="todo">
+       <label class="todo-item">
+         <input type="checkbox">
+         <p>Renew library book</p>
+       </label>
+     </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-panel">
+    <div class="card white">
+      <h3>Smart Alerts</h3>
+      <ul class="alerts">
+        <li>-Library book DS due in 2 days</li>
+        <li>-Railway concession slip available in office</li>
+        <li>-New workshop added in Events</li>
+        <li>-Assignment submission soon</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
