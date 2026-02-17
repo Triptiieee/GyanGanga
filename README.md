@@ -18,5 +18,7 @@ This project aims to reduce student confusion caused by fragmented systems and m
 - CSS  
 - JavaScript  
 
+## Live Demo:https://triptiieee.github.io/GyanGanga/
+
 ## Note
 This is a front-end prototype developed for a hackathon to demonstrate user experience and system workflow.
